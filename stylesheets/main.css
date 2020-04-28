@@ -141,7 +141,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
 .w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .w3-left{float:left!important}.w3-right{float:right!important}
-.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-button:hover{text-decoration:none;height:100% !important;color:MediumSlateBlue!important;background-color:#ffffff!important}
 .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .w3-hover-none:hover{box-shadow:none!important}
 /* Colors */
@@ -539,6 +539,19 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   background-size: cover;
 }
 
+.modal-thumbnail-box{
+  width: 100%;
+  height: 220px;
+}
+.modal-thumbnail-box img{
+  width: 100%;
+  height: 100%;
+}
+.family-photo-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .black-overlay {
   position: absolute;
   width: 100%;
@@ -677,18 +690,52 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   height: 100%;
 }
-
+a:focus{
+  text-decoration: none;
+  color: #ffffff;
+}
 p {
   font-family: 'Lato', sans-serif !important;
   font-weight: 300 !important;
 }
-
+.rotate-right-90{
+  transform: rotate(90deg);
+  margin: 50px 0px;
+}
 .gallery img {
   width: 100%;
   height: 200px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+/* photo gallery setting */
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column{
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+.full-column{
+  flex: 100%;
+  max-width: 100%;
+}
+.photo-gallery-box img{
+  width: 100%;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.gallery-center{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.gallery-center img{
+  width: 33%;
 }
 
 .gallery img.auto-height {
@@ -845,4 +892,10 @@ ul.timeline > li:after {
   height: 100%;
   vertical-align: middle;
   color: white;
+}
+@media screen and (max-width : 767px){
+  .column{
+    flex: 100%;
+    max-width: 100%;
+  }
 }
