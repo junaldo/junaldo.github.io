@@ -548,9 +548,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   height: 100%;
 }
 .family-photo-box{
+  width: 33%;
+  margin: 0 auto;
+}
+.family-photo-box img{
   width: 100%;
-  display: flex;
-  justify-content: center;
+  height: 100%;
 }
 .black-overlay {
   position: absolute;
@@ -896,5 +899,11 @@ ul.timeline > li:after {
   .column{
     flex: 100%;
     max-width: 100%;
+  }
+  .gallery-center img{
+    width: 100%;
+  }
+  .family-photo-box{
+    width: 100%;
   }
 }
