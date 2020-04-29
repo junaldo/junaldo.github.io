@@ -704,6 +704,12 @@ p {
 .rotate-right-90{
   transform: rotate(90deg);
   margin: 50px 0px;
+  width: 33%;
+  margin: 0 auto;
+}
+.rotate-right-90 img{
+  width: 100%;
+  height:100%;
 }
 .gallery img {
   width: 100%;
@@ -733,14 +739,13 @@ p {
   vertical-align: middle;
 }
 .gallery-center{
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: 33%;
+  margin: 0 auto;
 }
 .gallery-center img{
-  width: 33%;
+  width: 100%;
+  height: 100%;
 }
-
 .gallery img.auto-height {
   height: auto;
 }
@@ -900,7 +905,7 @@ ul.timeline > li:after {
     flex: 100%;
     max-width: 100%;
   }
-  .gallery-center img{
+  .gallery-center{
     width: 100%;
   }
   .family-photo-box{
