@@ -248,10 +248,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 /* Hide the images by default */
-/* .mySlides {
+.mySlides {
   display: none;
   opacity: 1;
-} */
+}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -442,6 +442,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .margin-bottom-25p {
   margin-bottom: 25%;
 }
+.margin-bottom-30{
+  margin-bottom: 30px !important;
+}
 
 .color-white {
   color:white !important;
@@ -526,7 +529,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 .parallax {
   /* The image used */
-  background-image: url("../images/header_medical_volunteer.jpg");
+  background-image: url("/images/header_medical_volunteer.jpg");
 
   /* Set a specific height */
   width: 100%;
@@ -548,12 +551,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   height: 100%;
 }
 .family-photo-box{
-  width: 33%;
-  margin: 0 auto;
-}
-.family-photo-box img{
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 .black-overlay {
   position: absolute;
@@ -693,7 +693,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   height: 100%;
 }
-.w3-button a:focus{
+a:focus{
   text-decoration: none;
   color: #ffffff;
 }
@@ -703,7 +703,7 @@ p {
 }
 .rotate-right-90{
   transform: rotate(90deg);
-  padding: 50px 0px;
+  margin: 50px 0px;
 }
 .gallery img {
   width: 100%;
@@ -711,6 +711,88 @@ p {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+
+.gallery img.auto-height {
+  height: auto;
+}
+/* main photos */
+.main-photo{
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+.main-photo-12{
+  width: 100%;
+  height: 700px;
+}
+.main-photo-4{
+  width: calc(100%/3);
+  height: 300px;
+}
+.main-photo-6{
+  width: 50%;
+  height: 500px;
+}
+.main-photo-12 img, .main-photo-4 img, .main-photo-6 img{
+  width: 100%;
+  height: 100%;
+}
+#main-1{
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/main_1.jpg');
+}
+#main-2{
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/main_2.jpg');
+}
+#main-2-1{
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/main_2_1.jpg');
+}
+#main-2-2{
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/main_2_2.jpg');
+}
+#main-2-3{
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/main_2_3.jpg');
+}
+#main-2-4{
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/main_2_4.jpg');
+}
+#main-2-5{
+  background-position: top;
+  background-size: cover;
+  background-image: url('../images/main_2_5.jpg');
+}
+#main-3{
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/main_3.jpg');
+}
+#main-3-1{
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/main_3_1.jpg');
+}
+#main-3-2{
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/main_3_2.jpg');
+}
+#main-3-3{
+  background-position: top;
+  background-size: cover;
+  background-image: url('../images/main_3_3.jpg');
 }
 /* photo gallery setting */
 .row{
@@ -727,6 +809,9 @@ p {
   flex: 100%;
   max-width: 100%;
 }
+.margin-auto{
+  margin: 0 auto !important;
+}
 .photo-gallery-box img{
   width: 100%;
   margin-top: 8px;
@@ -736,14 +821,10 @@ p {
   width: 33%;
   margin: 0 auto;
 }
-.gallery-center img{
+.gallery-center img {
   width: 100%;
   height: 100%;
 }
-.gallery img.auto-height {
-  height: auto;
-}
-
 .rotate-90 {
   transform: rotate(90deg);
 }
@@ -894,15 +975,50 @@ ul.timeline > li:after {
   vertical-align: middle;
   color: white;
 }
+@media screen and (max-width : 1280px){
+  .main-photo-12{
+    width: 100%;
+    height: 600px;
+  }
+  .main-photo-4{
+    width: calc(100%/3);
+    height: 250px;
+  }
+  .main-photo-6{
+    width: 50%;
+    height:400px;
+  }
+}
+@media screen and (max-width : 991px){
+  .main-photo{
+    width: 95%;
+  }
+  .main-photo-12{
+    width: 100%;
+    height: 500px;
+  }
+  .main-photo-4{
+    width: calc(100%/3);
+    height: 200px;
+  }
+  .main-photo-6{
+    width: 50%;
+    height: 350px;
+  }
+}
 @media screen and (max-width : 767px){
+.main-photo{
+  flex-direction: column;
+}
+.main-photo-4, .main-photo-6{
+  width: 100%;
+}
   .column{
     flex: 100%;
     max-width: 100%;
   }
-  .gallery-center{
+  .gallery-center {
     width: 97%;
   }
-  .family-photo-box{
-    width: 100%;
-  }
+
 }
