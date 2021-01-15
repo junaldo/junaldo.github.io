@@ -5,14 +5,14 @@
     <title>Ryan's Lab</title>
     <meta charset="utf-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="description" content="Aries Photos">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
-    <link rel="manifest" href="./favicons/site.webmanifest">
-    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -20,124 +20,193 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="./stylesheets/main.css">
-    <script src="./javascripts/main.js"></script>
-    <script src="./javascripts/animate.js"></script>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <script src="/javascripts/main.js"></script>
+    <script src="/javascripts/animate.js"></script>
 </head>
 
 <body>
-<!-- Desktop Menu Bar-->
-<div class="">
+    <!-- Desktop Menu Bar-->
+    <div class="">
 
-    <div class="w3-bar w3-card" style="background-color: MediumSlateBlue; color: white;">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" onclick="navigationHandler()"><i
-            class="fa fa-bars"></i></a>
-        <!-- About Ryan-->
-        <a class="w3-bar-item w3-button w3-padding-large" href="./index.html">
-            <b>RYAN</b>
-        </a>
+        <div class="w3-bar w3-card" style="background-color: MediumSlateBlue; color: white;">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                onclick="navigationHandler()"><i class="fa fa-bars"></i></a>
+            <!-- About Ryan-->
+            <a class="w3-bar-item w3-button w3-padding-large" href="javascript:;">
+                <b>RYAN</b>
+            </a>
 
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium w3-right" href="#contact">
-            CONTACT
-        </a>
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium w3-right" href="#contact">
+                CONTACT
+            </a>
 
 
-        <!-- Drop Down Menu-->
-        <div class="w3-dropdown-hover w3-right">
-            <a href="./medical-volunteer.html" class="w3-padding-large w3-button w3-hide-small w3-hide-medium " title="">MEDICAL VOLUNTEER <i
-                    class="fa fa-caret-down"></i></a>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a class="w3-bar-item w3-button" href="./medical-volunteer.html#2014">2014</a>
-                <a class="w3-bar-item w3-button" href="./medical-volunteer.html#2015">2015</a>
-                <a class="w3-bar-item w3-button" href="./medical-volunteer.html#2016">2016</a>
-                <a class="w3-bar-item w3-button" href="./medical-volunteer.html#2017">2017</a>
+            <!-- Drop Down Menu-->
+            <div class="w3-dropdown-hover w3-right">
+                <a href="/medical-volunteer" class="w3-padding-large w3-button w3-hide-small w3-hide-medium "
+                    title="">MEDICAL VOLUNTEER <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a class="w3-bar-item w3-button" href="/medical-volunteer#2014">2014</a>
+                    <a class="w3-bar-item w3-button" href="/medical-volunteer#2015">2015</a>
+                    <a class="w3-bar-item w3-button" href="/medical-volunteer#2016">2016</a>
+                    <a class="w3-bar-item w3-button" href="/medical-volunteer#2017">2017</a>
+                    <a class="w3-bar-item w3-button" href="/medical-volunteer#2019">2019</a>
+                    <a class="w3-bar-item w3-button" href="/medical-volunteer#2020">2020</a>
+                </div>
             </div>
+
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium w3-right"
+                href="/science-reading">
+                SCIENCE READING
+            </a>
+
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium w3-right" href="/about">
+                ALL ABOUT RYAN
+            </a>
+
+        </div>
+        <!-- Mobile Menu Bar	-->
+        <div class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" id="condensednav"
+            style="margin-top:46px;"><a class="w3-bar-item w3-button w3-padding-large" href="/about">ALL ABOUT
+                RYAN</a><a class="w3-bar-item w3-button w3-padding-large" href="/science-reading">SCIENCE READING</a><a
+                class="w3-bar-item w3-button w3-padding-large" href="/medical-volunteer">MEDICAL VOLUNTEER</a>
+            <a class="w3-bar-item w3-button w3-padding-large" href="/#contact">CONTACT</a>
+        </div>
+        <!--Contents-->
+
+        <div class="section"
+            style="background-image: url('/images/main1.jpeg'); -webkit-background-size: cover;background-size: cover; background-position: center center;">
+            <a href="/about">
+                <div class="container">
+                    <h1
+                        class="font-size-56 color-white font-weight-extra-bold text-center margin-top-25p margin-bottom-25p">
+                        ALL ABOUT RYAN</h1>
+                </div>
+            </a>
         </div>
 
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium w3-right" href="./science-reading.html">
-            SCIENCE READING
-        </a>
+        <div class="section"
+            style="background-image: url('/images/science_reading_header_background.jpg'); -webkit-background-size: cover;background-size: cover; background-position: center center;">
+            <a href="/science-reading">
+                <div class="container">
+                    <h1
+                        class="font-size-56 color-white font-weight-extra-bold text-center margin-top-25p margin-bottom-25p">
+                        SCIENCE READING</h1>
+                </div>
+            </a>
+        </div>
 
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium w3-right" href="./about.html">
-            ALL ABOUT RYAN
-        </a>
+        <div class="section"
+            style="background-image: url('/images/header_medical_volunteer.jpg'); -webkit-background-size: cover;background-size: cover; background-position: center center;">
+            <a href="/medical-volunteer">
+                <div class="container">
+                    <h1
+                        class="font-size-56 color-white font-weight-extra-bold text-center margin-top-25p margin-bottom-25p">
+                        MEDICAL VOLUNTEER</h1>
+                </div>
+            </a>
+        </div>
 
-    </div>
-    <!-- Mobile Menu Bar	-->
-    <div class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" id="condensednav"
-         style="margin-top:46px;"><a class="w3-bar-item w3-button w3-padding-large" href="/about.html">ALL ABOUT RYAN</a><a
-            class="w3-bar-item w3-button w3-padding-large" href="./science-reading.html">SCIENCE READING</a><a
-            class="w3-bar-item w3-button w3-padding-large" href="./medical-volunteer.html">MEDICAL VOLUNTEER</a>
-        <a class="w3-bar-item w3-button w3-padding-large" href="/#contact">CONTACT</a>
-    </div>
-    <!--Contents-->
+        <div class="section"
+            style="background-image: url('https://lh6.googleusercontent.com/qs8HHAK2DLqgo0lWrsUEcbMZb_J4umyHrxSRqxc3JZSOyfeTgjt33-N1AtVpHj9MimR2mdM0JM9cEzKDyPpO84j6njxKCmdIqA6HlhSTUHivxagKZfOAevenpIfi9ob_Jyr_3LM1'); -webkit-background-size: cover;background-size: cover; background-position: center center;">
+            <a href="/non-science">
+                <div class="container">
+                    <h1
+                        class="font-size-56 color-white font-weight-extra-bold text-center margin-top-25p margin-bottom-25p">
+                        NON SCIENCE</h1>
+                </div>
+            </a>
+        </div>
 
-    <div class="section"
-         style="background-image: url('./images/main1.jpeg'); -webkit-background-size: cover;background-size: cover; background-position: center center;">
-        <a href="./about.html">
-            <div class="container">
-                <h1 class="font-size-56 color-white font-weight-extra-bold text-center margin-top-25p margin-bottom-25p">ALL ABOUT RYAN</h1>
+        <div class="row">
+            <div class="main-photo">
+                <div class="main-photo-12" id="main-1">
+                    <!-- <img src="/images/main_1.jpg" class="img-responsive auto-height" /> -->
+                </div>
             </div>
-        </a>
-    </div>
-
-    <div class="section" style="background-image: url('./images/science_reading_header_background.jpg'); -webkit-background-size: cover;background-size: cover; background-position: center center;">
-        <a href="./science-reading.html">
-            <div class="container">
-                <h1 class="font-size-56 color-white font-weight-extra-bold text-center margin-top-25p margin-bottom-25p">SCIENCE READING</h1>
+            <br />
+            <div class="main-photo">
+                <div class="main-photo-4" id="main-2">
+                    <!-- <img src="/images/main_2.jpg" class="img-responsive auto-height" /> -->
+                </div>
+                <div class="main-photo-4" id="main-2-1">
+                    <!-- <img src="/images/main_2_1.jpg" class="img-responsive auto-height" /> -->
+                </div>
+                <div class="main-photo-4" id="main-2-2">
+                    <!-- <img src="/images/main_2_2.jpg" class="img-responsive auto-height" /> -->
+                </div>
             </div>
-        </a>
-    </div>
-
-    <div class="section" style="background-image: url('./images/header_medical_volunteer.jpg'); -webkit-background-size: cover;background-size: cover; background-position: center center;">
-        <a href="./medical-volunteer.html">
-            <div class="container">
-                <h1 class="font-size-56 color-white font-weight-extra-bold text-center margin-top-25p margin-bottom-25p">MEDICAL VOLUNTEER</h1>
+            <br />
+            <div class="main-photo">
+                <div class="main-photo-4" id="main-2-3">
+                    <!-- <img src="/images/main_2_3.jpg" class="img-responsive auto-height" /> -->
+                </div>
+                <div class="main-photo-4" id="main-2-4">
+                    <!-- <img src="/images/main_2_4.jpg" class="img-responsive auto-height" /> -->
+                </div>
+                <div class="main-photo-4" id="main-2-5">
+                    <!-- <img src="/images/main_2_5.jpg" class="img-responsive auto-height" /> -->
+                </div>
             </div>
-        </a>
-    </div>
-
-    <div class="section" style="background-image: url('https://lh6.googleusercontent.com/qs8HHAK2DLqgo0lWrsUEcbMZb_J4umyHrxSRqxc3JZSOyfeTgjt33-N1AtVpHj9MimR2mdM0JM9cEzKDyPpO84j6njxKCmdIqA6HlhSTUHivxagKZfOAevenpIfi9ob_Jyr_3LM1'); -webkit-background-size: cover;background-size: cover; background-position: center center;">
-        <a href="./about.html">
-            <div class="container">
-                <h1 class="font-size-56 color-white font-weight-extra-bold text-center margin-top-25p margin-bottom-25p">NON SCIENCE</h1>
+            <div class="main-photo">
+                <div class="main-photo-6" id="main-3">
+                    <!-- <img src="/images/main_3.jpg" class="img-responsive auto-height" /> -->
+                </div>
+                <div class="main-photo-6" id="main-3-1">
+                    <!-- <img src="/images/main_3_1.jpg" class="img-responsive auto-height" /> -->
+                </div>
             </div>
-        </a>
-    </div>
-
-    <!--<div class="section" style="background-image: url('https://lh6.googleusercontent.com/qs8HHAK2DLqgo0lWrsUEcbMZb_J4umyHrxSRqxc3JZSOyfeTgjt33-N1AtVpHj9MimR2mdM0JM9cEzKDyPpO84j6njxKCmdIqA6HlhSTUHivxagKZfOAevenpIfi9ob_Jyr_3LM1'); -webkit-background-size: cover;background-size: cover; background-position: center center;">-->
+            <div class="main-photo">
+                <div class="main-photo-6" id="main-3-2">
+                    <!-- <img src="/images/main_3_2.jpg" class="img-responsive auto-height" /> -->
+                </div>
+                <div class="main-photo-6" id="main-3-3">
+                    <!-- <img src="/images/main_3_3.jpg" class="img-responsive auto-height" /> -->
+                </div>
+            </div>
+        </div>
+        <!--<div class="section" style="background-image: url('https://lh6.googleusercontent.com/qs8HHAK2DLqgo0lWrsUEcbMZb_J4umyHrxSRqxc3JZSOyfeTgjt33-N1AtVpHj9MimR2mdM0JM9cEzKDyPpO84j6njxKCmdIqA6HlhSTUHivxagKZfOAevenpIfi9ob_Jyr_3LM1'); -webkit-background-size: cover;background-size: cover; background-position: center center;">-->
         <!--<a href="/contact">-->
-            <!--<div class="container">-->
-                <!--<h1 class="font-size-56 color-white font-bold text-center margin-top-25p margin-bottom-25p">CONTACT</h1>-->
-            <!--</div>-->
+        <!--<div class="container">-->
+        <!--<h1 class="font-size-56 color-white font-bold text-center margin-top-25p margin-bottom-25p">CONTACT</h1>-->
+        <!--</div>-->
         <!--</a>-->
-    <!--</div>-->
+        <!--</div>-->
 
-    <div id="contact">
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px;">
-            <h2 class="w3-wide w3-center">CONTACT</h2>
-            <p class="w3-opacity w3-center"><i>Feel free to reach out to me.<br>Friendly hellos are welcome as well  </i>;)</p>
-            <div class="w3-row w3-padding-32">
-                <div class="w3-col m6 w3-large w3-margin-bottom"><i class="fa fa-envelope" style="width:30px;"></i>
-                    <a href="mailto:2002ryanlee@gmail.com">
-                        <p style="display:inline;">2002ryanlee@gmail.com</p>
-                    </a>
-                </div>
-                <div class="w3-col m6">
-                    <form action="https://formspree.io/2002ryanlee@gmail.com" method="POST">
-                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px;">
-                            <div class="w3-half"><input class="w3-input w3-border" id="name" type="text" placeholder="Name" required name="name"></div>
-                            <div class="w3-half"><input class="w3-input w3-border" id="address" type="email" placeholder="Email" required name="_replyto" onchange="copyToCc();"></div>
-                        </div><input class="w3-input w3-border" id="subject" type="text" placeholder="Subject" required name="subject" style="margin-bottom: 8px;"><input class="w3-input w3-border" id="message" type="text" placeholder="Message" required
-                                                                                                                                                                          name="Message"><input type="hidden" name="_subject" value="New message - ryanslab.com"><input type="hidden" name="_next" value="http://ryanslab.com/"><input id="cc" type="hidden" name="_cc" value=""><button class="w3-button w3-black w3-section w3-right"
-                                                                                                                                                                                                                                                                                                                                                                                         type="submit" value="Send" onclick="saveMessage();">SEND</button></form>
+        <div id="contact">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px;">
+                <h2 class="w3-wide w3-center">CONTACT</h2>
+                <p class="w3-opacity w3-center"><i>Feel free to reach out to me.<br>Friendly hellos are welcome as well
+                    </i>;)</p>
+                <div class="w3-row w3-padding-32">
+                    <div class="w3-col m6 w3-large w3-margin-bottom"><i class="fa fa-envelope" style="width:30px;"></i>
+                        <a href="mailto:2002ryanlee@gmail.com">
+                            <p style="display:inline;">2002ryanlee@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="w3-col m6">
+                        <form action="https://formspree.io/2002ryanlee@gmail.com" method="POST">
+                            <div class="w3-row-padding" style="margin:0 -16px 8px -16px;">
+                                <div class="w3-half"><input class="w3-input w3-border" id="name" type="text"
+                                        placeholder="Name" required name="name"></div>
+                                <div class="w3-half"><input class="w3-input w3-border" id="address" type="email"
+                                        placeholder="Email" required name="_replyto" onchange="copyToCc();"></div>
+                            </div><input class="w3-input w3-border" id="subject" type="text" placeholder="Subject"
+                                required name="subject" style="margin-bottom: 8px;"><input class="w3-input w3-border"
+                                id="message" type="text" placeholder="Message" required name="Message"><input
+                                type="hidden" name="_subject" value="New message - ryanslab.com"><input type="hidden"
+                                name="_next" value="http://ryanslab.com/"><input id="cc" type="hidden" name="_cc"
+                                value=""><button class="w3-button w3-black w3-section w3-right" type="submit"
+                                value="Send" onclick="saveMessage();">SEND</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
@@ -145,7 +214,7 @@
 <script>
 
     var targetHash = window.location.hash || null;
-    if(null != targetHash) {
+    if (null != targetHash) {
         $('html, body').animate({
             scrollTop: $(targetHash).offset().top
         }, 'slow');
