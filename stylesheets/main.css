@@ -828,7 +828,9 @@ p {
 .rotate-90 {
   transform: rotate(90deg);
 }
-
+.font-size-14{
+  font-size: 14px !important;
+}
 .font-weight-extra-bold {
   font-weight: 900 !important;
 }
